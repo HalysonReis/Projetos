@@ -26,8 +26,8 @@
 }
 
 .up {
-    width: 210px;
-    height: 210px;
+    width: 205px;
+    height: 205px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,11 +43,16 @@
     border-right: 0px solid #007E70;
     border-top: 3px solid #007E70;
     border-left: 3px solid #007E70;
+    transition: all .1s ease-in-out;
 }
 
 .up-img {
     font-size: 2.5rem;
     color: #007E70;
+}
+
+.up:hover .up-img{
+    color: black;
 }
 
 .btn-editar {
@@ -58,7 +63,7 @@
     width: 30px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 860px) {
     .up-imgs {
         width: 100%;
         height: auto;
