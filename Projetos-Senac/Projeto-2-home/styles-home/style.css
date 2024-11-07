@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('menu/menu.css');
+@import url('menu.css');
 @import url('carrosel.css');
 
 :root {
@@ -35,6 +35,9 @@
     --color-rua2: #FC671D;
     --color-rua3: #90C470;
     --color-rua4: #B313FF;
+
+    --color-fundo-verde: #5EB64A;
+    /* #5EB64A #90C470 */
 }
 
 /* propriedades padroes */
@@ -56,7 +59,7 @@
 .carossel #fundo {
     margin-top: 100px;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-    background-color: #90C470;
+    background-color: var(--color-fundo-verde);
     width: 100%;
     height: 80vh;
 }
@@ -225,6 +228,7 @@ main .categoria #fundo-categoia {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     transition: all 0.5s ease;
 }
 
@@ -559,6 +563,7 @@ main .categoria #fundo-categoia {
     font-size: 1.7em;
     font-weight: 600;
     border-radius: 5px;
+    cursor: pointer;
     box-shadow: 0px 0px 10px #0000002d;
 }
 
@@ -626,6 +631,7 @@ main .categoria #fundo-categoia {
     border: none;
     border-radius: 5px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .seja-expositor .sombra {
@@ -640,6 +646,10 @@ main .categoria #fundo-categoia {
 }
 
 .seja-expositor .box-content-seja-expositor:hover .box-seja-expositor {
+    background-color: #F86FCE;
+}
+
+.seja-expositor .box-content-seja-expositor:hover .sombra  {
     background-color: #F86FCE;
 }
 
@@ -664,11 +674,11 @@ main .categoria #fundo-categoia {
     
 }
 
-
-.seja-expositor:hover .sombra {
+.seja-expositor .box-content-seja-expositor:hover .sombra  {
     width: 620px;
     background-color: #05A09C;
-} 
+}
+
 
 .seja-expositor .box-imagens {
     height: 100%;
@@ -716,7 +726,7 @@ main .categoria #fundo-categoia {
     align-items: center;
     justify-content: space-around;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 71%);
-    background-color: #5EB64A;
+    background-color: var(--color-fundo-verde);
 }
 
 .avisos .box-aviso {
@@ -783,7 +793,7 @@ main .categoria #fundo-categoia {
 }
 
 .passadas .text button {
-    background-color: #5EB64A;
+    background-color: var(--color-fundo-verde);
 }
 
 /* ultimas edições */
@@ -872,7 +882,7 @@ main .categoria #fundo-categoia {
 
 .box-footer .list-rodape {
     border-top: 2px solid #fff;
-    height: 500px;
+    height:  auto;
     width: 300px;
     display: flex;
     flex-direction: column;
