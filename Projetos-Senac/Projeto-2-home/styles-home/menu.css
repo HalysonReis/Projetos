@@ -221,6 +221,14 @@
 }
 
 @media screen and (max-width: 750px) {
+    .menu {
+        justify-content: space-evenly;
+    }
+    .logo{
+        margin-left: -20px;
+        padding: 0px;
+    }
+
     .nav-bar {
         display: none;
     }
