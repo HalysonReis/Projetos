@@ -3,6 +3,8 @@
 @import url('menu.css');
 @import url('carrosel.css');
 
+@import url('categorias.css');
+
 :root {
     --color-artesanato: rgba(13, 71, 161, 0.30);
     --color-artesanato-bg: rgba(13, 72, 161, 0.6);
@@ -131,207 +133,11 @@ main .informacoes .info .especi .p-compl{
     margin-top: -10px;
 }
 
-/* estilizado categoria */
-
-main .categoria {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-main .categoria #fundo-categoia {
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-    width: 90%;
-    height: 400px;
-    background-color: #643287;
-    position: absolute;
-
-}
-
-#fundo-categoia .text-categoria {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-categoria h2 {
-    font-size: 3em;
-    padding: 10px;
-    color: white;
-    transition: all 0.5s ease;
-}
-
-.text-categoria h2::before{
-    content: "";
-    display: inline;
-    border-top: 4px solid #F4F37B;
-    border-left: 4px solid #F4F37B;
-    background-color: none;
-    padding-left: 60px;
-    margin-right: -40px;
-    transition: all 0.5s ease;
-}
-.text-categoria h2::after{
-    content: "";
-    display: inline;
-    border-bottom: 4px solid #F4F37B;
-    border-right: 4px solid #F4F37B;
-    background-color: none;
-    padding-left: 60px;
-    margin-left: -40px;
-    transition: all 0.5s ease;
-}
-
-.text-categoria p {
-    margin-top: 10px;
-    font-size: 1.3em;
-    width: 50%;
-    text-align: center;
-    color: white;
-    transition: all 0.5s ease;
-}
-
-/* estilizando lista categorias */
-
-.categoria .categorias {
-    background-color: #F8F8F8;
-    max-width: 1000px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 500px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
-.categoria .categorias .parte {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    flex-wrap: wrap;
-    height: auto;
-}
-
-.categoria .categorias .item {
-    width: 120px;
-    height: 150px;
-    text-align: center;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.item .img-fundo {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(13, 71, 161, 0.30);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
 
 
-.item .img-fundo img {
-    width: 60%;
-}
 
-.item p {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1em;
-    width: 155px;
-}
 
-/* mudando cor categoria */
 
-.item .artesanato {
-    background-color: var(--color-artesanato);
-}
-
-.item .artesanato:hover {
-    background-color: var(--color-artesanato-bg);
-}
-
-.item .antiguidade {
-    background-color: var(--color-antiguidade);
-}
-
-.item .antiguidade:hover {
-    background-color: var(--color-antiguidade-bg);
-}
-
-.item .colecionismo {
-    background-color: var(--color-colecionismo);
-}
-
-.item .colecionismo:hover {
-    background-color: var(--color-colecionismo-bg);
-}
-
-.item .cosmetica {
-    background-color: var(--color-cosmetica);
-}
-
-.item .cosmetica:hover {
-    background-color: var(--color-cosmetica-bg);
-}
-
-.item .gastronomia {
-    background-color: var(--color-gastronomia);
-}
-
-.item .gastronomia:hover {
-    background-color: var(--color-gastronomia-bg);
-}
-
-.item .literatura {
-    background-color: var(--color-literatura);
-}
-
-.item .literatura:hover {
-    background-color: var(--color-literatura-bg);
-}
-
-.item .moda {
-    background-color: var(--color-moda);
-}
-
-.item .moda:hover {
-    background-color: var(--color-moda-bg);
-}
-
-.item .planta {
-    background-color: var(--color-planta);
-}
-
-.item .planta:hover {
-    background-color: var(--color-planta-bg);
-}
-
-.item .sustenta {
-    background-color: var(--color-sustenta);
-}
-
-.item .sustenta:hover{
-    background-color: var(--color-sustenta-bg);
-}
-
-.item .img-fundo:hover {
-    margin-top: -15px;
-}
 
 /* expositor */
 .expositores {
@@ -674,7 +480,7 @@ main .categoria #fundo-categoia {
     
 }
 
-.seja-expositor .box-content-seja-expositor:hover .sombra  {
+.box-content-seja-expositor:hover .sombra  {
     width: 620px;
     background-color: #05A09C;
 }
@@ -717,6 +523,14 @@ main .categoria #fundo-categoia {
     margin-top: -50px;
     font-size: 1.5em;
 }
+
+
+
+
+
+
+
+
 
 /* avisos */
 .avisos {
@@ -1128,12 +942,14 @@ main .categoria #fundo-categoia {
 
 
     .carossel #fundo {
-        margin-top: 80px;
-        height: 25vh;
+        margin-top: 100px;
+        height: 29vh;
+        width: 100vw;
     }
 
     .carossel .imagem {
-        height: 22vh;
+        width: 100vw;
+        height: 25vh;
     }
 
     main .text {
@@ -1157,7 +973,7 @@ main .categoria #fundo-categoia {
     }
 
     .categoria .text-categoria h2{
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     .categoria .text-categoria p {
@@ -1194,15 +1010,20 @@ main .categoria #fundo-categoia {
         width: 70%;
     }
 
-    .expositores .expositor-lista .expositor {
+    .expositor {
         margin: 15px;
         width: 150px;
-        height: 300px;
+        height: 350px;
     }
 
-    .expositor .imagem {
-        width: 150px;
+    .imagem-expositor {
+        width: 100%;
         height: 150px;
+    }
+
+    .imagem {
+        width: 140px;
+        height: 140px;
     }
 
     .expositor .informacoes-expositor {
@@ -1249,31 +1070,34 @@ main .categoria #fundo-categoia {
     }
 
     .seja-expositor .box-seja-expositor h3 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: 70%;
         margin-left: 40px;
     }
 
     .seja-expositor .box-seja-expositor p {
         font-size: 0.8em;
-        width: 70%;
+        width: auto;
         margin: 15px;
         margin-left: 40px;
     }
 
     .seja-expositor .box-seja-expositor button {
-        width: 150px;
-        font-size: 1em;
+        width: 100px;
+        font-size: 1.2em;
     }
 
     .seja-expositor .sombra {
+        position: absolute;
+        top: 30px;
         width: 350px;
         height: 250px;
+        animation: none;
     }
 
-    .seja-expositor:hover .sombra {
-        width: 360px;
-        background-color: #05A09C;
+    .box-content-seja-expositor:hover .sombra  {
+        width: 350px;
+        height: 250px;
     } 
 
     .avisos {
