@@ -1,10 +1,10 @@
-main .categoria {
+.categoria {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-main .categoria #fundo-categoia {
+.categoria #fundo-categoia {
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     width: 90%;
     height: 400px;
@@ -60,7 +60,7 @@ main .categoria #fundo-categoia {
 
 /* estilizando lista categorias */
 
-.categoria .categorias {
+.categorias {
     background-color: #F8F8F8;
     max-width: 1000px;
     width: 100%;
@@ -73,7 +73,7 @@ main .categoria #fundo-categoia {
     align-items: center;
 }
 
-.categoria .categorias .parte {
+.parte {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -84,7 +84,7 @@ main .categoria #fundo-categoia {
     height: auto;
 }
 
-.categoria .categorias .item {
+.item {
     width: 120px;
     height: 150px;
     text-align: center;
@@ -97,7 +97,7 @@ main .categoria #fundo-categoia {
     transition: all 0.5s ease;
 }
 
-.item .img-fundo {
+.img-fundo {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -109,7 +109,7 @@ main .categoria #fundo-categoia {
 }
 
 
-.item .img-fundo img {
+.img-fundo img {
     width: 60%;
 }
 
@@ -122,78 +122,78 @@ main .categoria #fundo-categoia {
 
 /* mudando cor categoria */
 
-.item .artesanato {
+.artesanato {
     background-color: var(--color-artesanato);
 }
 
-.item .artesanato:hover {
+.artesanato:hover {
     background-color: var(--color-artesanato-bg);
 }
 
-.item .antiguidade {
+.antiguidade {
     background-color: var(--color-antiguidade);
 }
 
-.item .antiguidade:hover {
+.antiguidade:hover {
     background-color: var(--color-antiguidade-bg);
 }
 
-.item .colecionismo {
+.colecionismo {
     background-color: var(--color-colecionismo);
 }
 
-.item .colecionismo:hover {
+.colecionismo:hover {
     background-color: var(--color-colecionismo-bg);
 }
 
-.item .cosmetica {
+.cosmetica {
     background-color: var(--color-cosmetica);
 }
 
-.item .cosmetica:hover {
+.cosmetica:hover {
     background-color: var(--color-cosmetica-bg);
 }
 
-.item .gastronomia {
+.gastronomia {
     background-color: var(--color-gastronomia);
 }
 
-.item .gastronomia:hover {
+.gastronomia:hover {
     background-color: var(--color-gastronomia-bg);
 }
 
-.item .literatura {
+.literatura {
     background-color: var(--color-literatura);
 }
 
-.item .literatura:hover {
+.literatura:hover {
     background-color: var(--color-literatura-bg);
 }
 
-.item .moda {
+.moda {
     background-color: var(--color-moda);
 }
 
-.item .moda:hover {
+.moda:hover {
     background-color: var(--color-moda-bg);
 }
 
-.item .planta {
+.planta {
     background-color: var(--color-planta);
 }
 
-.item .planta:hover {
+.planta:hover {
     background-color: var(--color-planta-bg);
 }
 
-.item .sustenta {
+.sustenta {
     background-color: var(--color-sustenta);
 }
 
-.item .sustenta:hover{
+.sustenta:hover{
     background-color: var(--color-sustenta-bg);
 }
 
-.item .img-fundo:hover {
+.img-fundo:hover {
     margin-top: -15px;
 }
